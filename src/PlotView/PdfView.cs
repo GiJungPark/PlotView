@@ -47,7 +47,7 @@ namespace PlotView
         private Size _lastSize;
         private Cursor _blankCursor;
 
-        public bool SpaceDown { get; set; }
+        public bool SpaceDown;
         public bool HasPage { get { return _page != IntPtr.Zero; } }
         public float PageWidthPt { get { return _pw; } }
         public float PageHeightPt { get { return _ph; } }
