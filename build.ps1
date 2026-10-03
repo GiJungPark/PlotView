@@ -14,7 +14,7 @@ if (-not $iscc) {
 }
 
 if (Test-Path publish) { Remove-Item publish -Recurse -Force }
-dotnet publish src/CadPdfViewer/CadPdfViewer.csproj -c Release -o publish
+dotnet publish src/PlotView/PlotView.csproj -c Release -o publish
 if ($LASTEXITCODE -ne 0) { exit 1 }
 & $iscc.FullName installer\setup.iss
 if ($LASTEXITCODE -ne 0) { exit 1 }
