@@ -20,6 +20,7 @@
     <PublishReadyToRun>true</PublishReadyToRun>
     <SatelliteResourceLanguages>ko</SatelliteResourceLanguages>
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <NoWarn>$(NoWarn);WFO1000</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
